@@ -39,4 +39,9 @@
     <img src="https://user-images.githubusercontent.com/105887782/263551403-49ac7f03-3ccc-43c8-b603-f3d946a1df82.png" alt="Centered Image">
     <img src="https://user-images.githubusercontent.com/105887782/263551401-70b587be-f3f2-4977-ac85-dc2ddc2c851c.png" alt="Centered Image">
 </div>
+<br>
+<h1 align="left">Admin Page</h1>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/105887782/263551860-c33fdd82-706d-43bc-b19b-6cf0735932f5.png" alt="Centered Image">
+</div>
 
