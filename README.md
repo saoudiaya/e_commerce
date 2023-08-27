@@ -27,4 +27,16 @@
 <div align="center">
     <img src="https://user-images.githubusercontent.com/105887782/263550835-553d486d-e57d-485e-aba3-071c77530cbb.png" alt="Centered Image">
 </div>
+<br>
+<h1 align="left">Checkout Page</h1>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/105887782/263550924-978030c1-3452-46d2-a930-434a976da772.png" alt="Centered Image">
+    <img src="https://user-images.githubusercontent.com/105887782/263550920-8c3fbac5-a294-4276-a354-fd1ea9ba7c24.png" alt="Centered Image">
+</div>
+<br>
+<h1 align="left">Login/Signup Page</h1>
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/105887782/263551403-49ac7f03-3ccc-43c8-b603-f3d946a1df82.png" alt="Centered Image">
+    <img src="https://user-images.githubusercontent.com/105887782/263551401-70b587be-f3f2-4977-ac85-dc2ddc2c851c.png" alt="Centered Image">
+</div>
 
