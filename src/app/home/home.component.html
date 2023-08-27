@@ -1,0 +1,127 @@
+<ngb-carousel>
+    <ng-template ngbSlide *ngFor="let image of images">
+      <div class="wrapper">
+        <img [src]="image.src" alt="Random first slide">
+      </div>
+    </ng-template>
+  </ngb-carousel>
+<div class="box">
+    <h1>WELCOME TO ZARA</h1>
+    <h4>were very happy to see you in Our Weekly Pick: ZARA SHOP</h4>.
+</div>
+<div class="card-content">
+  <div *ngFor="let item of produit | filter:searchKey:'title'" class="card-content">
+    <div class="card" *ngIf="item.id==17">
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+           <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="card" *ngIf="item.id==18">
+      
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+      
+    </div>
+
+
+    <div class="card" *ngIf="item.id==19">
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+      </div>
+  
+  </div>
+</div>
+
+<div class="card-content">
+  <div *ngFor="let item of produit | filter:searchKey:'title'" class="card-content">
+    <div class="card" *ngIf="item.id==20">
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="card" *ngIf="item.id==21">
+      
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+      
+    </div>
+
+
+    <div class="card" *ngIf="item.id==22">
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+      </div>
+  
+  </div>
+</div>
+
+<div class="card-content">
+  <div *ngFor="let item of produit | filter:searchKey:'title'" class="card-content">
+
+    <div class="card" *ngIf="item.id==23">
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="card" *ngIf="item.id==24">
+      
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}} TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+      
+    </div>
+
+
+    <div class="card" *ngIf="item.id==25">
+        <a [routerLink]="['/detail',item.id,item.color]"><img src="{{item.image}}" class="card-img-top" alt="Chicago Skyscrapers" /></a>
+        <div class="card-body">
+          <h5 class="pull-right">{{item.price}}.00 TND</h5>
+          <h5 class="card-title"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h5>
+          <!-- Button -->
+          <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+        </div>
+      </div>
+  
+  </div>
+</div>
+   
+

@@ -1,0 +1,205 @@
+.logon{
+    display: flex;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+    width: 300px;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 12px;
+  }
+  
+  .login-box form button{
+    position: relative;
+    display: inline-block;
+    padding: 5px 50px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+  }
+  
+  .login-box button:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    
+  }
+  
+  .login-box button span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+   
+  }
+  
+
+  
+  .login-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, black);
+   
+  }
+ 
+  
+  .login-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black);
+
+  }
+  
+
+  
+  .login-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, black);
+
+ }
+  
+.register-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 300px;
+  }
+
+  .register-box p {
+    margin: 0 0 30px;
+    padding: 0;
+    color: black;
+    text-align: left;
+    margin-left: 300px;
+  }
+
+  .register-box button{
+    position: relative;
+    display: inline-block;
+    padding: 5px 50px;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    margin-left: 300px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border-radius: 5px;
+  }
+  
+  .register-box button:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+    
+  }
+  
+  
+  .register-box button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, black);
+   
+  }
+  
+
+  
+  .register-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, black);
+   
+  }
+ 
+  
+  .register-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, black);
+
+  }
+  
+
+  
+  .register-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, black);
+
+ }
+  

@@ -1,0 +1,21 @@
+.table{
+    margin-top: 100px;
+}
+.image_box{
+    width: 150px;
+}
+.action_box{
+    display: flex;
+}
+.add-box{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.form-group{
+    padding: 7px;
+}
+.image_upload{
+    width: 150px;
+}

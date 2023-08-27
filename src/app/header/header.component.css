@@ -1,0 +1,52 @@
+@import "../../../node_modules/font-awesome/css/font-awesome.css";
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+width: 100px;
+padding-top: 0px;
+}
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    
+}
+.nav li{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.input-group{
+    padding-top: 10px;
+}
+
+button{
+    border: none;
+    margin-left: 25px;
+}
+
+.image-left{
+    text-align: left; 
+    margin-left: 10px;
+}
+
+.text-right{
+    text-align: left;
+    margin-left: 20px
+}
+.text{
+    display: flex
+}
+.body{
+    display: flex
+}
+.box{
+    display: flexbox;
+}

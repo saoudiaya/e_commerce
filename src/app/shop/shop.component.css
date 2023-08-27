@@ -1,0 +1,46 @@
+.card{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-left: 20px;
+}
+.intro{
+    text-align: center;
+    margin-top: 30px;
+}
+.intro h4{
+    font-weight: bold;
+}
+.jupe{
+    display: flex;
+}
+.monteau{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+.jogging{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+}
+.casquette{
+    display: flex;
+}
+.chaussure-casual{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+}
+.chaussure{
+    display: flex;
+}
+.card-img-top{
+    margin-left: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

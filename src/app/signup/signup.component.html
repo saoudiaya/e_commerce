@@ -1,0 +1,28 @@
+<div class="login-box">
+    <h2>PERSONAL DETAILS</h2>
+    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+      <div class="user-box">
+        <input type="email" name="" required="" formControlName="e_mail">
+        <label>E-MAIL</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="" required="" formControlName="password">
+        <label>PASSWORD</label>
+      </div>
+      <div class="body">
+        <div class="user-box">
+            <input type="text" name="" required="" formControlName="first_name">
+            <label>FIRST NAME</label>
+        </div>
+            <div class="user-box">
+                <div class="right">
+                    <input type="text" name="" required="" formControlName="last_name">
+                    <label style="margin-left: 100px;">LAST NAME</label>
+                </div>
+            </div>
+      </div>
+      <button type="submit">
+        CREATE ACCOUNT
+      </button>
+    </form>
+</div>

@@ -1,0 +1,32 @@
+<div class="logon">
+    <div class="login">
+        
+        <div class="login-box">
+            <h2>LOG IN</h2>
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+              <div class="user-box">
+                <input type="text" name="" required="" formControlName="e_mail">
+                <label>Username</label>
+              </div>
+              <div class="user-box">
+                <input type="password" name="" required="" formControlName="password">
+                <label>Password</label>
+              </div>
+              <button type="submit" >
+                Submit
+              </button>
+            </form>
+        </div>
+
+    </div>
+    <div class="register">
+        <div class="register-box">
+            <h2>REGISTER</h2>
+            <p>IF YOU STILL DON'T HAVE A <b> ZARA.COM </b>ACCOUNT, USE THIS OPTION TO ACCESS THE REGISTRATION FORM.</p>
+            <p> BY GIVING US YOUR DETAILS, PURCHASING IN <b> ZARA.COM </b> WILL BE FASTER AND AN ENJOYABLE EXPERIENCE.</p>
+            <button routerLink="/signup">CREATE ACCOUNT</button>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,43 @@
+
+.box{
+     margin-top: 20px;
+}
+.box h1,h4{
+    font-weight: bold;
+    text-align: center;
+}
+.card-content{
+    display: flex;
+    margin-top: 20px;
+}
+.card{
+    margin-top: 60px;
+    width: 100%;
+    height: auto;
+    border: none;
+    margin-left: 20px;
+}
+.card-title{
+    text-align: left;
+}
+.card-title a{
+    text-decoration: none;
+    color: black;
+}
+.card-body{
+    padding-top: 30px;
+}
+ngb-carousel .wrapper {
+    position: relative;
+    height: 0;
+    margin-top: 20px;
+    padding-top: 50%; /* Keep ratio for 900x500 images */
+}
+ngb-carousel .wrapper>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}

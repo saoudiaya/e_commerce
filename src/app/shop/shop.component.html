@@ -1,0 +1,376 @@
+<div class="intro">
+    <h4>Our Monthly Pick: ZARA SHOP</h4>
+    <h5>Catch your style with our new models suitable for your casual style with our autumn/winter or spring/summer catalog.</h5>
+</div>
+<div class="jupe">
+  <div *ngFor="let item of produit | filter:searchKey:'title'" class="jupe">
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==1" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}} TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+   <!-- Card Narrower -->
+   <div *ngIf="item.id==2" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==3" class="card card-cascade narrower">
+      <!-- Card image -->
+      <div class="view view-cascade overlay">
+        <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+        
+      </div>
+      <!-- Card content -->
+      <div class="card-body card-body-cascade">
+        <!-- prize -->
+        <h5 class="pull-right">{{item.price}} TND</h5>
+        <!-- title -->
+        <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+        <!-- Button -->
+        <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+      </div>
+      </div>
+      <!-- Card Narrower -->
+
+
+
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==4" class="card card-cascade narrower">
+      <!-- Card image -->
+      <div class="view view-cascade overlay">
+        <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+        
+          
+        
+      </div>
+      <!-- Card content -->
+      <div class="card-body card-body-cascade">
+        <!-- prize -->
+        <h5 class="pull-right">{{item.price}}.00 TND</h5>
+        <!-- title -->
+        <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+        <!-- Button -->
+        <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+      </div>
+      </div>
+      <!-- Card Narrower -->
+
+  </div>
+</div>
+
+
+
+<div class="monteau">
+<div *ngFor="let item of produit | filter:searchKey:'title'">
+  <!-- Card Narrower -->
+  <div *ngIf="item.id==5" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+  <!-- Card Narrower -->
+  <div *ngIf="item.id==6" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+        
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+</div>
+</div>
+
+
+<div class="jogging">
+<div *ngFor="let item of produit | filter:searchKey:'title'">
+  <!-- Card Narrower -->
+  <div *ngIf="item.id==7" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+
+  <!-- Card Narrower -->
+  <div *ngIf="item.id==8" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="casquette">
+  <div *ngFor="let item of produit | filter:searchKey:'title'" class="casquette">
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==9" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+        
+     
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}} TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+   <!-- Card Narrower -->
+   <div *ngIf="item.id==10" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+        
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==11" class="card card-cascade narrower">
+      <!-- Card image -->
+      <div class="view view-cascade overlay">
+        <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      </div>
+      <!-- Card content -->
+      <div class="card-body card-body-cascade">
+        <!-- prize -->
+        <h5 class="pull-right">{{item.price}} TND</h5>
+        <!-- title -->
+        <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+        <!-- Button -->
+        <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+      </div>
+      </div>
+      <!-- Card Narrower -->
+
+
+
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==12" class="card card-cascade narrower">
+      <!-- Card image -->
+      <div class="view view-cascade overlay">
+        <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      </div>
+      <!-- Card content -->
+      <div class="card-body card-body-cascade">
+        <!-- prize -->
+        <h5 class="pull-right">{{item.price}}.00 TND</h5>
+        <!-- title -->
+        <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+        <!-- Button -->
+        <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+      </div>
+      </div>
+      <!-- Card Narrower -->
+
+  </div>
+</div>
+
+
+
+<div class="chaussure-casual">
+<div *ngFor="let item of produit | filter:searchKey:'title'">
+
+
+  <!-- Card Narrower -->
+  <div *ngIf="item.id==13" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+</div>
+</div>
+
+
+<div class="chaussure">
+  <div *ngFor="let item of produit | filter:searchKey:'title'" class="chaussure">
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==14" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+        
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+   <!-- Card Narrower -->
+   <div *ngIf="item.id==15" class="card card-cascade narrower">
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+      <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      
+    </div>
+    <!-- Card content -->
+    <div class="card-body card-body-cascade">
+      <!-- prize -->
+      <h5 class="pull-right">{{item.price}}.00 TND</h5>
+      <!-- title -->
+      <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+      <!-- Button -->
+      <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+    </div>
+    </div>
+    <!-- Card Narrower -->
+
+
+    <!-- Card Narrower -->
+    <div *ngIf="item.id==16" class="card card-cascade narrower">
+      <!-- Card image -->
+      <div class="view view-cascade overlay">
+        <a [routerLink]="['/detail',item.id,item.color]"><img class="card-img-top" src="{{item.image}}" alt="Card image cap"></a>
+       
+      </div>
+      <!-- Card content -->
+      <div class="card-body card-body-cascade">
+        <!-- prize -->
+        <h5 class="pull-right">{{item.price}}.00 TND</h5>
+        <!-- title -->
+        <h6 style="font-weight: bold;"><a [routerLink]="['/detail',item.id,item.color]">{{item.name}}</a></h6>
+        <!-- Button -->
+        <button type="button" class="btn btn-outline-dark" (click)="addToCart(item)">Add to cart</button>
+      </div>
+      </div>
+      <!-- Card Narrower -->
+
+  </div>
+</div>

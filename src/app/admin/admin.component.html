@@ -1,0 +1,132 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Size</th>
+        <th scope="col">Color</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Category</th>
+        <th scope="col">Action</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of produit">
+        <td><img src="{{item.image}}" class="image_box"></td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}} TND</td>
+        <td>{{item.size}}</td>
+        <td>{{item.color}}</td>
+        <td>{{item.qteStock}}</td>
+        <td>{{item.category}}</td>
+        <td>
+            <div class="action_box">
+                <button class="btn" (click)="deleteProduct(item.id)"><i class="fa fa-trash"></i></button>
+                <button class="btn"><i class="fa fa-pencil" (click)="open1(mymodal1)"></i></button>
+                <ng-template #mymodal1 let-modal>
+            
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="modal-basic-title">Edit Product</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                      <span aria-hidden="true">×</span>
+                    </button>
+                  </div>
+              
+                  <div class="add-box">
+                      <form class="formulaire" [formGroup]="form">
+                          <div class="form-row">
+                            <div class="form-group">
+                              <label for="inputName">Name</label>
+                              <input type="text" formControlName="name" class="form-control" id="inputEmail4" placeholder="Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPrice">Price</label>
+                              <input type="text" formControlName="price" class="form-control" id="inputPassword4" placeholder="Price">
+                            </div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputSize">Size</label>
+                            <input type="text" formControlName="size" class="form-control" id="inputAddress" placeholder="Size">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputColor">Color</label>
+                            <input type="text" formControlName="color" class="form-control" id="inputAddress2" placeholder="Color">
+                          </div>
+                          <div class="form-group col-md-6">
+                              <label for="inputQuantity">Quantity</label>
+                              <input type="text"  formControlName="qteStock" class="form-control" id="inputAddress2" placeholder="Quantity">
+                          </div>
+                          <div class="form-group col-md-6">
+                              <label for="inputCategory">Category</label>
+                              <input type="text" formControlName="category" class="form-control" id="inputAddress2" placeholder="Category">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlFile1">Upload Image</label>
+                              <br>
+                              <img src="{{link}}" alt="" class="image_upload">
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1" (change)="getImagePath($event)">
+                            </div>
+                          <button type="submit" class="btn btn-outline-dark" style="margin-left: 170px; margin-top: 20px;" (click)="EditProduct(item.id)">Edit Product</button>
+                        </form>
+                  </div>  
+                  
+              </ng-template>
+            </div>
+        </td>
+      </tr>
+    </tbody>
+    
+  </table>
+
+<button type="button" class="btn btn-outline-dark" style="margin-left: 1160px; margin-top: 30px;" (click)="open(mymodal)">Add Product</button>
+
+<ng-template #mymodal let-modal>
+            
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Add Product</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
+
+    <div class="add-box">
+        <form class="formulaire" [formGroup]="form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="inputName">Name</label>
+                <input type="text" formControlName="name" class="form-control" id="inputEmail4" placeholder="Name">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPrice">Price</label>
+                <input type="text" formControlName="price" class="form-control" id="inputPassword4" placeholder="Price">
+              </div>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputSize">Size</label>
+              <input type="text" formControlName="size" class="form-control" id="inputAddress" placeholder="Size">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputColor">Color</label>
+              <input type="text" formControlName="color" class="form-control" id="inputAddress2" placeholder="Color">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputQuantity">Quantity</label>
+                <input type="text"  formControlName="qteStock" class="form-control" id="inputAddress2" placeholder="Quantity">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCategory">Category</label>
+                <input type="text" formControlName="category" class="form-control" id="inputAddress2" placeholder="Category">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlFile1">Upload Image</label>
+                <br>
+                <img src="{{link}}" alt="" class="image_upload">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1" (change)="getImagePath($event)">
+              </div>
+            <button type="submit" class="btn btn-outline-dark" style="margin-left: 170px; margin-top: 20px;" (click)="addProduct()">Add Product</button>
+          </form>
+    </div>
+    
+</ng-template>
